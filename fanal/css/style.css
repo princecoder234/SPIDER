@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(249, 109, 109);
+}
+a:hover{
+    color: rgb(203, 43, 43);
+
+}.button{
+    transition: background, padding 1s ease;
+}
+.button:hover{
+    background:lightgreen;
+    color: red;
+    padding: 12px;
+
+}
+
+
+.logo img{
+
+    width: 5%;
+    border-radius: 50%;
+}
+.advert{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+.advert p{
+    animation-name:  light-color ;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.logo a{
+    margin-left:.50rem;
+    color: green;
+    font-size: 1.34rem;
+    text-transform: capitalize;
+    font-family: Segoe UI;
+    font-weight: bold;
+    text-decoration: none;
+    
+
+}
+.logo p{
+    font-style: oblique;
+    font-weight: bold;
+}
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(213, 193, 193);
+    height: 20vh;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+ul li{
+    margin: 10px;
+    list-style: none;
+}
+ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    color: green;
+    border-radius: 0.25rem;
+    font-weight: bold;
+
+}
+.category a{
+    background: green;
+    color: white;
+    border: 2px solid green;
+    width: 20%;
+    padding: 7px;
+   
+   
+}
+.category{
+    width: 20%;
+}
+
+
+/* start hero */
+#hero{
+    background-color: rgb(213, 193, 193);
+    margin-top: 20px;
+}
+
+.hero-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.food-images{
+    margin-left: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.second-food img{
+    width: 90%;
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+}
+.fist-food img{
+    width:90% ;
+    margin-left: 1rem;
+}
+img{
+    transition: padding 1s ease;
+}
+img:hover{
+    padding: 5px;
+
+}
+
+
+.hero-box{
+    margin-left: 3rem;
+}
+
+.hero-box h1{
+    font-size: 3rem;
+    color:rgb(24, 148, 24);
+    margin-bottom: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+
+
+    
+}
+.hero-box p{
+    margin-bottom: 25px;
+    color: rgb(91, 49, 49);
+    font-size:1.22rem;
+    line-height: 1.44rem;
+    
+}
+
+
+.hero-box a{
+margin: 20px;
+margin-left:0;
+background-color: green;
+border:1px solid darkolivegreen;
+padding: 10px;
+color: white;
+font-weight: bold;
+font-size: 1rem;
+text-decoration: none;
+text-transform: capitalize;
+border-radius: 0.25rem;
+}
+
+/* end hero */
+
+
+/* start contact */
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-item{
+     background-color: rgb(213, 193, 193);
+     margin: 30px;
+     width: 50%;
+     text-align: center;
+     border-radius: 12px;
+}
+.contact-item img{
+    width: 40px;
+    margin-bottom: 20px;
+    background-color: green;
+    border-radius: 50%;
+
+}
+.contact-item p{
+    margin-bottom: 20px;
+    color: rgb(91, 49, 49);
+}
+.contact-item h2{
+  color: rgb(15, 16, 16);
+}
+
+/* end contact */
+
+.special-section{
+    display: flex;
+    flex-direction: column;
+}
+.special{
+    display:flex ;
+    
+ 
+}
+.special img{
+    width: 17vw;
+    height: 20vh;
+    margin: 1rem;
+
+
+
+
+}
+#our-special{
+    background-color: gray;
+}
+.special-container{
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-specials ul{
+
+    flex-direction: column;
+
+    
+ 
+}
+.list-specials ul li{
+      font-size: 2rem;
+      font-weight: 500;
+      color: green;
+ 
+      text-transform: capitalize;
+      list-style-image:url('../images/bullet.svg');
+}
+
+.list-specials h2{
+    color: white;
+    font-weight: bold;
+
+    margin-top: 2rem;
+    
+}
+.list-specials{
+    color: rgb(93, 62, 62);
+    margin-bottom: 2rem;
+}
+
+
+
+@keyframes light-color{
+    0%{
+        color: white;
+        padding: 1px;
+        transform: translate(0px,0px);
+    }
+    10%{
+        color: green;
+        padding: 2px;
+        transform: translate(0px,0px);
+    }
+    40%{
+        color: white;
+        transform: translate(0px,0px);
+    }
+}
+
+@media(max-width:700px){
+
+
+    .food-images{
+        margin-right: 4rem;
+        display: flex;
+        justify-content: center;
+        
+        padding: 2rem;
+
+    }
+    .food-images img{
+        margin-right: 3rem;
+        width: 20vw;
+        
+      
+    }
+
+    .hero-container .hero-box{
+        text-align: center;
+    }
+
+     .hero-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+    .contact-container{
+        flex-direction: column;
+        flex: 1 2 100px;
+        margin: 10px;
+    }
+   
+    
+}
